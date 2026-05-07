@@ -3,117 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11:20 Botanical | Cuidado Artesanal</title>
+    <title>11:20 Botanical | Dominio en Espera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4a5d4e; /* Verde Oliva profundo */
-            --secondary: #8ba889; /* Verde Suave */
-            --accent: #d4a373; /* Tono Arena/Jabón */
-            --bg: #fdfbf7; /* Blanco Hueso */
-            --text: #2d3a2f;
+            --primary: #2d3a2f;
+            --accent: #8ba889;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
         }
 
         body {
             margin: 0;
-            padding: 0;
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--bg);
-            color: var(--text);
+            color: var(--primary);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
-        }
-
-        .container {
             text-align: center;
-            padding: 2rem;
-            max-width: 600px;
-            position: relative;
         }
 
-        .logo-placeholder {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
+        .parking-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid #eee;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: #eef5ee;
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
             font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            letter-spacing: -1px;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: var(--secondary);
-            margin-bottom: 2rem;
-            font-weight: 500;
-        }
-
-        .divider {
-            width: 60px;
-            height: 2px;
-            background-color: var(--accent);
-            margin: 2rem auto;
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            line-height: 1.2;
-            color: var(--text);
+            letter-spacing: 1px;
             margin-bottom: 1.5rem;
         }
 
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 1rem 0;
+            font-weight: 700;
+        }
+
         p {
-            font-size: 1.1rem;
             line-height: 1.6;
             color: #666;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
 
-        .badge {
-            display: inline-block;
-            padding: 10px 24px;
-            border: 1px solid var(--secondary);
-            border-radius: 50px;
-            color: var(--primary);
-            font-weight: 600;
+        .server-info {
+            background: #f1f3f5;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .server-info div {
             font-size: 0.9rem;
+            margin-bottom: 0.5rem;
         }
 
-        /* Decoración sutil */
-        .leaf {
-            position: absolute;
-            z-index: -1;
-            opacity: 0.1;
-            width: 200px;
+        .server-info strong {
+            color: var(--primary);
         }
 
-        .leaf-1 { top: -100px; right: -50px; transform: rotate(45deg); }
-        .leaf-2 { bottom: -100px; left: -50px; transform: rotate(-135deg); }
+        .contact-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
 
+        .contact-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #999;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="leaf leaf-1">🌿</div>
-        <div class="leaf leaf-2">🌿</div>
+    <div class="parking-card">
+        <div class="status-badge">DOMINIO RESERVADO</div>
+        <h1>11:20 Botanical</h1>
+        <p>Este dominio ha sido configurado correctamente y se encuentra actualmente en fase de desarrollo.</p>
 
-        <div class="logo-placeholder">11:20</div>
-        <div class="tagline">Botanical</div>
-        
-        <div class="divider"></div>
+        <div class="server-info">
+            <div>Infraestructura administrada por:</div>
+            <strong>JAM Multimedia Servers</strong>
+            <div style="margin-top: 10px; font-size: 0.8rem; color: #888;">Status: Online | SSL: Active</div>
+        </div>
 
-        <h1>Naturaleza pura en cada detalle.</h1>
-        <p>Estamos seleccionando los mejores ingredientes botánicos para crear una experiencia única en cuidado personal y jabones artesanales.</p>
-        
-        <div class="badge">PRÓXIMAMENTE</div>
+        <p style="font-size: 0.9rem;">Para consultas administrativas o soporte técnico:</p>
+        <a href="mailto:josenegocios@gmail.com" class="contact-btn">Contactar Soporte</a>
+
+        <footer>
+            &copy; 2026 JAM Multimedia. Todos los derechos reservados.
+        </footer>
     </div>
 
 </body>
